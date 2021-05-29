@@ -274,7 +274,27 @@ nav{
     font-size: 2em;
     font-family: 'Times New Roman', Times, serif;
 }
-
+.box h3{
+    text-align: center;
+    text-transform: lowercase;
+    letter-spacing: 0.5em;
+    font-size: 1em;
+    background-color: rgba(0, 17, 255, 0.322);
+    border: black 2px solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px black;
+}
+.box h5{
+    color: white;
+    text-align: center;
+    text-transform: lowercase;
+    letter-spacing: 0.5em;
+    font-size: 1em;
+    background-color: rgb(0, 0, 0);
+    border: black 2px solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px black;
+}
 @media screen and (min-width: 400px){
     .container{
         display: flex;
@@ -360,12 +380,14 @@ nav{
     }
     #banner{
         background-color: white;
-        display: flex;
+        display: relative;
         align-items: center;
     }
     #banner img{
-        display: relative;
+        display: absolute;
         align-content: center;
+        width: 598px;
+        height: 300px;
     }
     h1{
         text-align: center;
@@ -386,6 +408,7 @@ nav{
     .overlay{
         visibility: hidden;
     }
+
     
     .slide:hover .overlay{
         visibility: visible;
